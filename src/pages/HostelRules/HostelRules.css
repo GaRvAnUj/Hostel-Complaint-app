@@ -1,0 +1,33 @@
+.rules-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  
+  .rule-section {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+  }
+  
+  .rule-section h2 {
+    margin-top: 0;
+    color: #2196F3;
+  }
+  
+  .dark-theme .rule-section {
+    background-color: #1e1e1e;
+  }
+  
+  .dark-theme .rule-section h2 {
+    color: #64b5f6;
+  }
+  
+  ul {
+    padding-left: 1.5rem;
+  }
+  
+  li {
+    margin-bottom: 0.5rem;
+  }

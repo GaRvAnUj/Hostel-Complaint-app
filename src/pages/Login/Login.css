@@ -1,0 +1,10 @@
+.otp-notice {
+    color: #666;
+    font-size: 0.9em;
+    text-align: center;
+    margin: 10px 0;
+  }
+  
+  input[type="number"] {
+    margin-top: 15px;
+  }
