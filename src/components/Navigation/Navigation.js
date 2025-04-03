@@ -9,22 +9,24 @@ const Navigation = () => {
   return (
     <nav className={`navbar ${darkMode ? 'dark' : ''}`}>
       <div className="nav-brand">
-        <Link to="/" className="logo-link">
+        <Link to="/home" className="logo-link">
           ROOMEASEE
         </Link>
       </div>
 
       <div className="nav-links">
-        <Link to="/register" className="nav-link">
-          Register
-        </Link>
-
+        <Link to="/home" className="nav-link">Home</Link>
+        
         <Link to="/hostel-rules" className="nav-link">
           Hostel Rules
         </Link>
 
         <Link to="/contact" className="nav-link">
           Contact
+        </Link>
+
+        <Link to="/register" className="nav-link">
+          Register
         </Link>
 
         <button 

@@ -11,7 +11,7 @@ const Login = () => {
 
   // Email validation function
   const validateEmail = (email) => {
-    const re = /^[a-z]+\.[a-z]+\d{4}@vitstudent\.ac\.in$/i;;
+    const re = /^[a-z]+\.[a-z]+\d{4}@vitstudent\.ac\.in$/i;
     return re.test(email);
   };
 
@@ -24,8 +24,8 @@ const Login = () => {
 
     setError('');
     
-    // Generate a random 6-digit OTP
-    const newOtp = Math.floor(100000 + Math.random() * 900000);
+    // Generate a random 4-digit OTP
+    const newOtp = Math.floor(1000 + Math.random() * 9000);
     setGeneratedOtp(newOtp);
     
     // Show OTP to user (in production, this would be sent via email)
@@ -42,7 +42,7 @@ const Login = () => {
       return;
     }
 
-    // If OTP exists, verify it
+    
     if (parseInt(otp) === generatedOtp) {
       navigate('/home');
     } else {

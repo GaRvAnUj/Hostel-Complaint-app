@@ -17,7 +17,7 @@ const Registration = () => {
         </button>
         <button 
           className="button" 
-          onClick={() => navigate('/login')}
+          onClick={() => navigate('/')}
         >
           ADMIN
         </button>

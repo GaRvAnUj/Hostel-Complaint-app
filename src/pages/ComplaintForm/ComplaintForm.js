@@ -6,7 +6,7 @@ const ComplaintForm = () => {
     name: '',
     email: '',
     room: '',
-    category: 'AC/Fan Repair',
+    category: '',
     description: ''
   });
 
