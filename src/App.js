@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route,Navigate } from 'react-router-dom';
 import DarkModeContext from './context/DarkModeContext';
 import Navigation from './components/Navigation/Navigation';
 import Home from './pages/Home/Home';
@@ -26,7 +26,8 @@ function App() {
           <Navigation />
           <main>
             <Routes>
-              <Route path="/" element={<Home />} />
+              <Route path="/" element={<Navigate to="/register" replace />}/>
+              <Route path="/home" element={<Home />} />
               <Route path="/login" element={<Login />} />
               <Route path="/register" element={<Registration />} />
               <Route path="/hostel-rules" element={<HostelRules />} />
